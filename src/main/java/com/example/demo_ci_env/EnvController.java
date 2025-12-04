@@ -15,6 +15,7 @@ public class EnvController {
 
     @Value("${app.env-name:unknown}")
     private String envName;
+    private String envnew;
 
     public EnvController(Environment environment) {
         this.environment = environment;
@@ -24,6 +25,13 @@ public class EnvController {
     public String envInfo() {
         List<String> activeProfiles = Arrays.asList(environment.getActiveProfiles());
         return "Hello from environment: " + envName +
+                " | activeProfiles=" + activeProfiles;
+    }
+
+    @GetMapping("/env")
+    public String envnew() {
+        List<String> activeProfiles = Arrays.asList(environment.getActiveProfiles());
+        return "Hello for learning " + envnew +
                 " | activeProfiles=" + activeProfiles;
     }
 }
