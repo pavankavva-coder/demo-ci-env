@@ -1,4 +1,8 @@
-# Project Name
+# Continuous integration for environment based project
+
+# Using 
+java version 17
+jenkins 2.528.2
 
 ## Description
 This project is used for environment-based configuration and secure deployment.
