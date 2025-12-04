@@ -2,7 +2,7 @@
 
 # Using 
 java version 17
-jenkins 2.528.2
+jenkins 2.528
 
 ## Description
 This project is used for environment-based configuration and secure deployment.
